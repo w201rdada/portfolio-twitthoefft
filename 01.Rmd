@@ -1,24 +1,25 @@
-# My first cool idea {#slug-one}
+# Managing Blood Clot Risk {#Helping health care providers and heart failure patients}
 
 #### Keywords
 
-yaba, daba, do
+Heart failure, LVAD, blood clots, INR
 
-## A beginning.
+## The L-VAD Heart Pump.
 
-Chartreuse next level beard, gochujang vexillologist letterpress meggings.  Godard in  vero, raw denim asymmetrical small batch shabby chic.  Four loko id  actually, pug sartorial sustainable twee live-edge ea chartreuse typewriter disrupt ut direct trade  accusamus.  Nesciunt hoodie live-edge hell of cred, man braid ex mixtape tumblr odio skateboard 8-bit.  Cold-pressed portland nesciunt schlitz organic, lyft bespoke keffiyeh jianbing migas plaid.  Aute  delectus id  master cleanse migas.  Assumenda enamel pin man braid tumblr, four dollar toast YOLO selfies pitchfork tacos kale chips cronut hot chicken.
+Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device.  This is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart.  Patients with L-VADs and their health care providers are highly concerned about blood clots, which are a big risk for those with these pumps installed.  
 
-## A middle.
+To help control the risk of blood clots, patients are prescribed blood thinning drugs, such as Coumadin.  However, the specific dosage of Coumadin needs to be monitored and regulated very closely, as there are risks at both ends: blood that is too ‘thin’ will not clot effectively and can cause excessive bleeding; and blood that is too thick clots too easily and can impair the function of the L-VAD pump.  To determine the appropriate level, patients regularly receive a lab test known as the INR - International Normalized Ratio - which is a measure of the blood’s ability to clot.  
 
-Deep v accusamus fingerstache tempor kickstarter, sunt banjo tumeric franzen irure  beard af velit  meditation kogi.  Keffiyeh fam shoreditch voluptate  pork belly.  Trust fund vape fixie, dolor  lomo exercitation cardigan.  Meggings hot chicken chartreuse, health goth 3 wolf moon lumbersexual deep v et celiac art party.  Keffiyeh magna mlkshk drinking vinegar, tbh mollit  thundercats heirloom health goth kale chips kitsch gochujang chambray aute  +1.  Heirloom ugh chicharrones franzen locavore swag.  Hexagon man braid lomo, gentrify elit shoreditch flexitarian single-origin coffee gochujang kitsch nihil yuccie mlkshk.
+The doctors and nurses that monitor the INR score of their patients will recommend  dosage adjustments of the anticoagulant drugs to bring their patient’s INR into the desired range.  And this is where the data science problem lies - the dosage amount and corresponding change of INR value can be difficult to predict.  Different patients respond either very strongly or very weakly to different dosages, and with many patients to manage, making the best dosage recommendation is difficult to achieve.  
 
-<!-- ...or include images directly from the web. Cite your sources! -->
-```{r machine-learning,echo=FALSE,fig.cap='[xkcd: Machine Learning](https://xkcd.com/1838/)',fig.align='center',out.width='50%'}
-knitr::include_graphics('https://imgs.xkcd.com/comics/machine_learning.png')
-```
+## INR Management System.
 
-Commodo mustache pinterest yr, nostrud nesciunt esse  photo booth.  Keytar synth mlkshk, ullamco veniam sed laboris  seitan velit  live-edge fam gastropub.  Ad mumblecore nihil messenger bag williamsburg occaecat.  Bushwick pickled ullamco, keytar letterpress vice chillwave cillum.  Voluptate  listicle irure  food truck coloring book shoreditch.  Before they sold out four dollar toast stumptown single-origin coffee, retro nostrud veniam dreamcatcher street art subway tile sed pabst hoodie copper mug.  Everyday carry seitan vaporware gastropub etsy, freegan ramps hashtag vegan.
+This problem will be approached in three primary ways: visualizing the INR trend, applying statistical process control to historical data, and third, the application of a prediction algorithm to recommend dosage changes to bring the INR metric back to the target value.  The current method of reviewing INR history is through digital medical records.  These records contain tabulated values - none of the data is visualized.  Trends could be missed or misdiagnosed due to the absence of a visual representation of the patient’s INR history.
 
-## An end.
+Secondly, it’s important to consider the statistical variation of the INR score when determining whether to intervene and take action.  Over-compensating with a dosage change, when the fluctuation is actually caused by random variation, can cause further harm and risk worsening the patient’s status.  Time-series data analysis techniques such as statistical process control could be used to determine whether the INR reading is outside of normal variation and requires response.
 
-90's salvia echo park voluptate, ennui pitchfork church-key photo booth pug aesthetic offal.  Jianbing lomo disrupt before they sold out umami.  Sapiente in  swag yr leggings, selfies distillery fap enamel pin elit aliquip listicle organic master cleanse pug.  La croix coloring book cray, vice ullamco cornhole whatever copper mug neutra pour-over vinyl kogi incididunt tilde gastropub.  Prism veniam VHS, sustainable ea meh viral duis.  Hell of health goth 8-bit microdosing sed keffiyeh.  Laboris  marfa hell of chartreuse celiac poutine keytar, iceland scenester enim nihil man bun church-key forage fam.
+Finally, a prediction algorithm will be created to make recommended dosage changes when the INR value falls outside of norms.  The goal is to bring the patient back to baseline with the fewest amount of adjustments and in the shortest period of time.  Because the INR value can lag several days after a Coumadin dose change, its important to bring the patient back to baseline quickly, to minimize the amount of time the INR is in a dangerous regime.  
+
+## Better Outcomes.
+
+With a systematic approach to monitoring patient’s INR scores, health care providers can better identify situations that require intervention and those that do not.  Furthermore, the prediction algorithm brings patient’s INR scores back into range much faster than before - thereby reducing the amount of time the patient is exposed to blood clot risk.  
