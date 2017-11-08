@@ -1,4 +1,4 @@
-# Deep learning for improved defect classification in chip manufacturing {#Deep Learning Defects}
+# Deep learning for improved defect classification in chip manufacturing {#Manufacturing with AI}
 
 #### Keywords
 
@@ -23,4 +23,4 @@ Finally, the predefined image classes are generally capped at 150 types not beca
 
 ## A Smarter Factory
 
-The application of CNNs for image classification could transform the semiconductor industry.  Faster, more accurate classification will provide new insights and enable tracing of defect sources.  Though jobs will be replaced with an algorithm, the time and effort of skilled technicians can be redirected with retraining to existing, highly in-demand roles such as maintenance and process engineering.  
+The application of CNNs for image classification could transform the semiconductor industry.  While neural networks are often limited due to insufficient training data, semiconductor factories have millions of labeled reference images for model training.  Faster, more accurate classification will provide new insights and enable tracing of defect sources.  Though jobs will be replaced with an algorithm, the time and effort of skilled technicians can be redirected with retraining to more interesting and highly in-demand roles such as maintenance and process engineering.  
