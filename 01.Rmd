@@ -1,25 +1,44 @@
-# Helping health care providers and heart failure patients {#Managing Blood Clot Risk}
+# Managing Blood Clot Risk: Helping health care providers and heart failure patients {#blood-clot-risk} <!--ok but unwieldy-->
 
 #### Keywords
 
-Heart failure, LVAD, blood clots, INR
+Heart failure, LVAD, blood clots, INR <!--add tech keywords-->
 
-## The L-VAD Heart Pump.
+## The L-VAD Heart Pump
 
-Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device.  The L-VAD is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart.  Though the health and function of patients greatly improves after implanting the L-VAD, their health care providers are highly concerned about the formation of blood clots, which are a big risk for those with these pumps installed.  
+Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device. 
+The L-VAD is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart. 
+Though the health and function of patients greatly improves after implanting the L-VAD, their health care providers are highly concerned about the formation of blood clots, which are a big risk for those with these pumps installed. <!--great specificity around the problem and the stakeholders-->
 
-To help control the risk of blood clots, patients are prescribed blood thinning drugs, such as Coumadin.  However, the specific dosage of Coumadin needs to be monitored and regulated very closely, as there are risks at both ends: blood that is too ‘thin’ will not clot effectively and can cause excessive bleeding; and blood that is too thick clots too easily and can impair the function of the L-VAD pump.  To determine the appropriate level, patients regularly receive a lab test known as the INR - International Normalized Ratio - which is a measure of the blood’s ability to clot.  
+To help control the risk of blood clots, patients are prescribed blood thinning drugs, such as Coumadin. 
+However, the specific dosage of Coumadin needs to be monitored and regulated very closely, as there are risks at both ends: blood that is too "thin" will not clot effectively and can cause excessive bleeding; and blood that is too thick clots too easily and can impair the function of the L-VAD pump. 
+To determine the appropriate level, patients regularly receive a lab test known as the INR, International Normalized Ratio, which is a measure of the blood's ability to clot. 
 
-Doctors and nurses monitor their patient's INR scores several times per week and will recommend  dosage adjustments of the anticoagulant drugs if their patient’s INR score is out of the desired range.  And this is where the data science problem lies - the dosage adjustment and corresponding change of INR value can be difficult to predict.  Each patient is unique and responds differently to dosage changes.  A standardized and conservative protocol is consistent, but not tailored for each patient specifically.  Alternatively, trial-and-error experience can teach nurses how a particular patient will react, so that customized recommendations can be made in the future; but this kind of learning is not systematic and is dependent on that nurse's "tribal knowledge".  With many patients for a single clinic to manage, making the best dosage recommendation is difficult to achieve.  
-
+Doctors and nurses monitor their patients' INR scores several times per week and will recommend dosage adjustments of the anticoagulant drugs if their patient's INR score is out of the desired range. <!--How stable is the range? Individual variations?-->
+And this is where the data science problem lies -- the dosage adjustment and corresponding change of INR value can be difficult to predict. 
+Each patient is unique and responds differently to dosage changes. <!--Unique at multiple levels-->
+A standardized and conservative protocol is consistent, but not tailored for each patient specifically. 
+Alternatively, trial-and-error experience can teach nurses how a particular patient will react, so that customized recommendations can be made in the future; but this kind of learning is not systematic and is dependent on that nurse's "tribal knowledge". <!--explain. Also, will the individual's parameters themselves be a moving target, or are they stable but merely unknown?-->
+With many patients for a single clinic to manage, making the best dosage recommendation is difficult to achieve. 
+<!--Great problem description, but be clear who the client for your product (INR-MS) will be.-->
 ## INR Management System.
 
-This problem will be approached in three primary ways: visualizing the INR trend, applying statistical process control to historical data, and creating a prediction algorithm to recommend dosage changes to bring the INR metric back to the target value.  The current method of reviewing INR history is through digital medical records.  These records contain tabulated values - none of the data is visualized.  Trends could be missed or misdiagnosed due to the absence of a visual representation of the patient’s INR history. 
+This problem will be approached in three primary ways: visualizing the INR trend, applying statistical process control to historical data, and creating a prediction algorithm to recommend dosage changes to bring the INR metric back to the target value. <!--Good detail-->
+The current method of reviewing INR history is through digital medical records. 
+These records contain tabulated values -- none of the data are visualized. 
+Trends could be missed or misdiagnosed due to the absence of a visual representation of the patient's INR history. <!--Visualization is not always ideal. Your model should yield a decideable result.-->
 
-Secondly, it’s important to consider the statistical variation of the INR score when determining whether to intervene and take action.  Over-compensating with a dosage change, when the fluctuation is actually caused by random variation, can cause further harm and risk worsening the patient’s status.  Time-series data analysis techniques such as statistical process control could be used to determine whether the INR reading is outside of normal variation and requires response.
+Secondly, it's important to consider the statistical variation of the INR score when determining whether to intervene and take action. 
+Over-compensating with a dosage change, when the fluctuation is actually caused by random variation, can cause further harm and risk worsening the patient's status. 
+Time-series data analysis techniques such as statistical process control could be used to determine whether the INR reading is outside of normal variation and requires response. <!--ARIMA is well implemented in R. This will be great material for the experiment class.-->
 
-Finally, a prediction algorithm will be created to make recommended dosage changes when the INR value falls outside of norms.  The goal is to bring the patient back to baseline with the fewest amount of adjustments and in the shortest period of time.  Because the INR value can lag several days after a Coumadin dose change, its important to bring the patient back to baseline quickly, to minimize the amount of time the INR is in a dangerous regime.  With a systematic methodology in place, it may be possible to add additional variables to the algorithm, such as the patient's current weight, diet choices, or other blood tests, further enhancing the accuracy and personalization of the algorithm.  
+Finally, a prediction algorithm will be created to make recommended dosage changes when the INR value falls outside of norms. 
+The goal is to bring the patient back to baseline with the fewest amount of adjustments and in the shortest period of time. 
+Because the INR value can lag several days after a Coumadin dose change, its important to bring the patient back to baseline quickly, to minimize the amount of time the INR is in a dangerous regime. <!--Is this all on an inpatient basis? What kind of test is the INR? The granularity of that measurement will put limits on your method.-->
+With a systematic methodology in place, it may be possible to add additional variables to the algorithm, such as the patient's current weight, diet choices, or other blood tests, further enhancing the accuracy and personalization of the algorithm. 
 
 ## Better Outcomes.
+<!--Let's beef up this outro.-->
+With a systematic approach to monitoring patient's INR scores, health care providers can better identify situations that require intervention and those that do not. 
+Furthermore, the prediction algorithm brings patient's INR scores back into range much faster than before - thereby reducing the amount of time the patient is exposed to blood clot risk. 
 
-With a systematic approach to monitoring patient’s INR scores, health care providers can better identify situations that require intervention and those that do not.  Furthermore, the prediction algorithm brings patient’s INR scores back into range much faster than before - thereby reducing the amount of time the patient is exposed to blood clot risk.  
