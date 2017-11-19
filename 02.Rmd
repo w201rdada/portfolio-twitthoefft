@@ -6,19 +6,19 @@ deep learning, classification, semiconductor, defects
 
 ## Human Classifiers
 
-The manufacturing of semiconductor devices involves hundreds of individual chemical processes.  With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work.   Therefore, an integral part of the manufacturing process is defect inspection.  Various techniques are used to identify where defects are located, but once a defect is found, an image of the defect is taken using a scanning electron microscope (SEM).  These SEM images are highly useful for engineers trying to understand the underlying cause of the defect.  The size, shape, and depth of the defect provide clues as to when and why the defect may have occurred. 
+The manufacturing of semiconductor devices involves hundreds of individual chemical processes.  With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work.   Therefore, an integral part of the manufacturing process is defect inspection.  Various techniques are used to identify where defects are located. Once a defect is found, an image of the defect is taken using a scanning electron microscope (SEM).  These SEM images are highly useful for engineers trying to understand the underlying cause of the defect.  The size, shape, and depth of the defect provide clues as to when and why the defect may have occurred. 
 
-Defect images are also labeled with a classification name - such as sphere, scratch, and lifting defects.  With every defect labeled, engineers can plot the occurrence rate of particular defects over time.  The current methodology for all semiconductor companies is to classify defect images manually by trained technicians.  A defect catalog of references images is used to match up every defect to one of about 150 predefined types.  
+Defect images are also labeled with a classification name - such as sphere, scratch, and lifting defects.  Since every defect is labeled, engineers can plot the occurrence rate of particular defects over time.  The current methodology for all semiconductor companies is for trained technicians to classify defect images manually.  A defect catalog of reference images is used to match up every defect to one of about 150 predefined types.  
 
 ## Convolutional Neural Networks
 
 With recent advances in machine vision using neural networks, the time is right to try modern techniques such as convolutional neural networks (CNN), which have proven highly effective at image recognition.  There are several key benefits that an algorithm-driven classification system would provide.  
 
-First, image classification is usually the bottleneck step during the detection-inspection-classification process.  Near-immediate classification would allow product material to continue to the next process step, rather than waiting for a technician to review the images.  
+First, image classification is usually the bottleneck step during the detection-inspection-classification process.  Near-immediate classification would avoid this bottleneck by moving flawed materials on to the next process step, without having to wait for a technician to review the images.  
 
-Secondly, classification accuracy may improve dramatically.  Manually labeling images is a tedious and repetitive task, and by the end of a 12 hour shift, it’s common to make mistakes.  Additionally, there may be pressures put upon technicians to meet manufacturing quotas, which could lead to rushed decisions and poorer accuracy.  
+Secondly, classification accuracy may improve dramatically.  Manually labeling images is a tedious and repetitive task, and by the end of a 12 hour shift, it’s common for workers to make mistakes.  Additionally, in many manufacturing plants technicians are under pressure to meet manufacturing quotas, which could lead to rushed decisions and poorer accuracy.  
 
-Finally, the predefined image classes are generally capped at 150 types not because that is the total count of possible failures, but rather because human classifiers cannot easily manage hundreds of different classes.  A CNN algorithm could be used to cluster single classes into sub-groups, which may provide important new information.
+Finally, the predefined image classes currently used are generally capped at 150 types not because that is the total count of possible failures, but rather because human classifiers cannot easily manage hundreds of different classes.  A CNN algorithm could be used to cluster single classes into sub-groups, which may provide important new information.
 
 
 ## A Smarter Factory
