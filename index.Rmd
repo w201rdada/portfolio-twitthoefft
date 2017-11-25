@@ -12,7 +12,7 @@ library(magrittr)
 ```
 
 
-# Welcome!
+# Welcome! {-}
 
 <!-- You can include images saved within your repo... -->
 ```{r hello-world,echo=FALSE,fig.cap='Hello World!',fig.align='center',out.width='50%'}
@@ -36,7 +36,7 @@ Heart failure patients and their healthcare providers closely monitor a critical
 The manufacturing of semiconductor devices involves hundreds of individual chemical processes. With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work.  When defects are found, the current methodology for all semiconductor companies is to classify defect images manually by trained technicians.  This proposal suggests that recent advances in convolutional neural networks may provide an alternative solution to human classifiers that would speed up manufacturing, improve classification accuracy, and more quickly detect new defects.  
   
 
-## About the author
+## About the author {-}
 
 
 
