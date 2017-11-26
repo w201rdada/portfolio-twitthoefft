@@ -38,6 +38,7 @@ The manufacturing of semiconductor devices involves hundreds of individual chemi
 
 ## About the author {-}
 
+Tim Witthoefft is a Senior Engineer at Samsung Austin Semiconductor and an 11 year veteran in the semiconductor industry.  The deep learning defect image classification idea comes from his own work at Samsung and is a real, unsolved problem in the field.  Tim's wife, Sarah, is a Registered Nurse and specializes in heart failure and L-VAD heart pumps.  The INR project idea comes from her work and the challenges seen by the Seton heart failure clinic in Austin.  
 
 
 *Updated: `r Sys.Date()`*
