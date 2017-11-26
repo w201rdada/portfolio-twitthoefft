@@ -8,7 +8,11 @@ deep learning, classification, semiconductor, defects
 
 The manufacturing of semiconductor devices involves hundreds of individual chemical processes.  With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work.   Therefore, an integral part of the manufacturing process is defect inspection.  Various techniques are used to identify where defects are located, but once a defect is found, an image of the defect is taken using a scanning electron microscope (SEM).  These SEM images are highly useful for engineers trying to understand the underlying cause of the defect.  The size, shape, and depth of the defect provide clues as to when and why the defect may have occurred. 
 
-Defect images are also labeled with a classification name - such as sphere, scratch, and lifting defects.  With every defect labeled, engineers can plot the occurrence rate of particular defects over time.  The current methodology for all semiconductor companies is to classify defect images manually by trained technicians.  A defect catalog of references images is used to match up every defect to one of about 150 predefined types.  
+Defect images are also labeled with a classification name - such as sphere, scratch, and lifting defects.  With every defect labeled, engineers can plot the occurrence rate of particular defects over time.  The current methodology for all semiconductor companies is to classify defect images manually by trained technicians.  A defect catalog of references images is used to match up every defect to one of about 150 predefined types.
+
+```{r Defect1,echo=FALSE,fig.cap='Wafer defect example',fig.align='left',out.width='50%'}
+knitr::include_graphics('img/defect1.jpg', 'img/defect2.jpg')
+```
 
 ## Convolutional Neural Networks
 
