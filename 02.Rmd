@@ -10,8 +10,8 @@ The manufacturing of semiconductor devices involves hundreds of individual chemi
 
 Defect images are also labeled with a classification name - such as sphere, scratch, and lifting defects.  With every defect labeled, engineers can plot the occurrence rate of particular defects over time.  The current methodology for all semiconductor companies is to classify defect images manually by trained technicians.  A defect catalog of references images is used to match up every defect to one of about 150 predefined types.
 
-```{r Defect1,echo=FALSE,fig.cap='Wafer defect example',fig.align='left',out.width='50%'}
-knitr::include_graphics('img/defect1.jpg', 'img/defect2.jpg')
+```{r Defect1,echo=FALSE,fig.cap='Wafer defect example',fig.align='center',out.width='50%'}
+knitr::include_graphics('img/defect1.jpg')
 ```
 
 ## Convolutional Neural Networks

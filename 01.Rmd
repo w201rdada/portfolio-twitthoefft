@@ -8,7 +8,7 @@ Heart failure, LVAD, blood clots, INR
 
 Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device.  The L-VAD is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart.  Though the health and function of patients greatly improves after implanting the L-VAD, their health care providers are highly concerned about the formation of blood clots, which are a big risk for those with these pumps installed.
 
-```{r LVAD,echo=FALSE,fig.cap='L-VAD device',fig.align='right',out.width='50%'}
+```{r LVAD,echo=FALSE,fig.cap='L-VAD device',fig.align='center',out.width='50%'}
 knitr::include_graphics('img/LVAD.jpg')
 ```
 
@@ -18,7 +18,7 @@ Doctors and nurses monitor their patient's INR scores several times per week and
 
 ## INR Management System.
 
-```{r INR,echo=FALSE,fig.cap='INR blood test',fig.align='left',out.width='50%'}
+```{r INR,echo=FALSE,fig.cap='INR blood test',fig.align='center',out.width='50%'}
 knitr::include_graphics('img/INR.jpg')
 ```
 
