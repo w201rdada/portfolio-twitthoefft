@@ -6,7 +6,11 @@ Heart failure, LVAD, blood clots, INR
 
 ## The L-VAD Heart Pump.
 
-Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device.  The L-VAD is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart.  Though the health and function of patients greatly improves after implanting the L-VAD, their health care providers are highly concerned about the formation of blood clots, which are a big risk for those with these pumps installed.  
+Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device.  The L-VAD is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart.  Though the health and function of patients greatly improves after implanting the L-VAD, their health care providers are highly concerned about the formation of blood clots, which are a big risk for those with these pumps installed.
+
+```{r LVAD,echo=FALSE,fig.cap='L-VAD device',fig.align='right',out.width='50%'}
+knitr::include_graphics('img/LVAD.jpg')
+```
 
 To help control the risk of blood clots, patients are prescribed blood thinning drugs, such as Coumadin.  However, the specific dosage of Coumadin needs to be monitored and regulated very closely, as there are risks at both ends: blood that is too ‘thin’ will not clot effectively and can cause excessive bleeding; and blood that is too thick clots too easily and can impair the function of the L-VAD pump.  To determine the appropriate level, patients regularly receive a lab test known as the INR - International Normalized Ratio - which is a measure of the blood’s ability to clot.  
 
