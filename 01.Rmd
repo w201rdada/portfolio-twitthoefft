@@ -18,6 +18,10 @@ Doctors and nurses monitor their patient's INR scores several times per week and
 
 ## INR Management System.
 
+```{r INR,echo=FALSE,fig.cap='INR blood test',fig.align='left',out.width='50%'}
+knitr::include_graphics('img/INR.jpg')
+```
+
 This problem will be approached in three primary ways: visualizing the INR trend, applying statistical process control to historical data, and creating a prediction algorithm to recommend dosage changes to bring the INR metric back to the target value.  The current method of reviewing INR history is through digital medical records.  These records contain tabulated values - none of the data is visualized.  Trends could be missed or misdiagnosed due to the absence of a visual representation of the patient’s INR history. 
 
 Secondly, it’s important to consider the statistical variation of the INR score when determining whether to intervene and take action.  Over-compensating with a dosage change, when the fluctuation is actually caused by random variation, can cause further harm and risk worsening the patient’s status.  Time-series data analysis techniques such as statistical process control could be used to determine whether the INR reading is outside of normal variation and requires response.
