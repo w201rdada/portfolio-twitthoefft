@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="helping-health-care-providers-and-heart-failure-patients-managing-blood-clot-risk.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -100,42 +100,33 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">W201 Portfolio</h1>
-<h4 class="author"><em>Tim Witthoefft</em></h4>
-<h4 class="date"><em>MIDS Fall 2017</em></h4>
+<div id="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai" class="section level1">
+<h1>Deep learning for improved defect classification in chip manufacturing {#Manufacturing with AI}</h1>
+<div id="keywords" class="section level4">
+<h4>Keywords</h4>
+<p>deep learning, classification, semiconductor, defects</p>
 </div>
-<div id="welcome" class="section level1">
-<h1>Welcome!</h1>
-<!-- You can include images saved within your repo... -->
-<div class="figure" style="text-align: center"><span id="fig:hello-world"></span>
-<img src="img/hello-world.png" alt="Hello World!" width="50%" />
+<div id="human-classifiers" class="section level2">
+<h2>Human Classifiers</h2>
+<p>The manufacturing of semiconductor devices involves hundreds of individual chemical processes. With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work. Therefore, an integral part of the manufacturing process is defect inspection. Various techniques are used to identify where defects are located, but once a defect is found, an image of the defect is taken using a scanning electron microscope (SEM). These SEM images are highly useful for engineers trying to understand the underlying cause of the defect. The size, shape, and depth of the defect provide clues as to when and why the defect may have occurred.</p>
+<p>Defect images are also labeled with a classification name - such as sphere, scratch, and lifting defects. With every defect labeled, engineers can plot the occurrence rate of particular defects over time. The current methodology for all semiconductor companies is to classify defect images manually by trained technicians. A defect catalog of references images is used to match up every defect to one of about 150 predefined types.</p>
+<div class="figure" style="text-align: center"><span id="fig:Defect1"></span>
+<img src="img/defect1.jpg" alt="Wafer defect example" width="50%" />
 <p class="caption">
-Figure 1: Hello World!
+Figure 3: Wafer defect example
 </p>
 </div>
-<p>Intro…</p>
-<!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
-<p>
-<div class="figure" style="text-align: center"><span id="fig:hello-benji"></span>
-<iframe src="https://drive.google.com/file/d/0B_KuRL21Jtlebjd2Z2FVUWZDM2s/preview" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 2: Tim Witthoefft Intro Video
-</p>
 </div>
-<div id="abstract-of-my-first-cool-idea" class="section level3">
-<h3>Abstract of my first cool idea</h3>
-<p>Heart failure patients and their healthcare providers closely monitor a critical blood-clotting lab test called INR - International Normalized Ratio. With this test result, Doctors presribe dosage changes to critical blood thinning drugs, such as Coumadin, that help to regulage the patients’ blood coagulation. Current methods for INR management either involve static protocols applied to all patients, or personally-learned yet undocumented tendencies gained by practitioners from the historical management of a patient over time. To help guide these critical decisions, the proposed data tool will visually plot INR scores over time, assess the statistical variation to detect outliers and abnormal signals, and offer predictive dossage recommendations that are tailored for the individual patient. With a systematic approach to monitoring patient’s INR scores, health care providers can better identify situations that require intervention and those that do not.</p>
+<div id="convolutional-neural-networks" class="section level2">
+<h2>Convolutional Neural Networks</h2>
+<p>With recent advances in machine vision using neural networks, the time is right to try modern techniques such as convolutional neural networks (CNN), which have proven highly effective at image recognition. There are several key benefits that an algorithm-driven classification system would provide.</p>
+<p>First, image classification is usually the bottleneck step during the detection-inspection-classification process. Near-immediate classification would allow product material to continue to the next process step, rather than waiting for a technician to review the images.</p>
+<p>Secondly, classification accuracy may improve dramatically. Manually labeling images is a tedious and repetitive task, and by the end of a 12 hour shift, it’s common to make mistakes. Additionally, there may be pressures put upon technicians to meet manufacturing quotas, which could lead to rushed decisions and poorer accuracy.</p>
+<p>Finally, the predefined image classes are generally capped at 150 types not because that is the total count of possible failures, but rather because human classifiers cannot easily manage hundreds of different classes. A CNN algorithm could be used to cluster single classes into sub-groups, which may provide important new information.</p>
 </div>
-<div id="abstract-of-my-second-cool-idea" class="section level3">
-<h3>Abstract of my second cool idea</h3>
-<p>The manufacturing of semiconductor devices involves hundreds of individual chemical processes. With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work. When defects are found, the current methodology for all semiconductor companies is to classify defect images manually by trained technicians. This proposal suggests that recent advances in convolutional neural networks may provide an alternative solution to human classifiers that would speed up manufacturing, improve classification accuracy, and more quickly detect new defects.</p>
-</div>
-<div id="about-the-author" class="section level2">
-<h2>About the author</h2>
-<p>Tim Witthoefft is a Senior Engineer at Samsung Austin Semiconductor and an 11 year veteran in the semiconductor industry. The deep learning defect image classification idea comes from his own work at Samsung and is a real, unsolved problem in the field. Tim’s wife, Sarah, is a Registered Nurse and specializes in heart failure and L-VAD heart pumps. The INR project idea comes from her work and the challenges seen by the Seton heart failure clinic in Austin.</p>
-<p><em>Updated: 2017-11-26</em></p>
+<div id="a-smarter-factory" class="section level2">
+<h2>A Smarter Factory</h2>
+<p>The application of CNNs for image classification could transform the semiconductor industry. While neural networks are often limited due to insufficient training data, semiconductor factories have millions of labeled reference images for model training. Faster, more accurate classification will provide new insights and enable tracing of defect sources. Though jobs will be replaced with an algorithm, the time and effort of skilled technicians can be redirected with retraining to more interesting and highly in-demand roles such as maintenance and process engineering.</p>
 
 </div>
 </div>
@@ -144,8 +135,8 @@ Figure 2: Tim Witthoefft Intro Video
           </div>
         </div>
       </div>
-
-<a href="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="helping-health-care-providers-and-heart-failure-patients-managing-blood-clot-risk.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -174,7 +165,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/index.Rmd",
+"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/02.Rmd",
 "text": "Edit"
 },
 "download": null,

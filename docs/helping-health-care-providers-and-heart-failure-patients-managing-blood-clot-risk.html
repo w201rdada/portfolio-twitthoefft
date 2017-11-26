@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai.html">
 
-<link rel="next" href="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -100,42 +100,39 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">W201 Portfolio</h1>
-<h4 class="author"><em>Tim Witthoefft</em></h4>
-<h4 class="date"><em>MIDS Fall 2017</em></h4>
+<div id="helping-health-care-providers-and-heart-failure-patients-managing-blood-clot-risk" class="section level1">
+<h1>Helping health care providers and heart failure patients {#Managing Blood Clot Risk}</h1>
+<div id="keywords-1" class="section level4">
+<h4>Keywords</h4>
+<p>Heart failure, LVAD, blood clots, INR</p>
 </div>
-<div id="welcome" class="section level1">
-<h1>Welcome!</h1>
-<!-- You can include images saved within your repo... -->
-<div class="figure" style="text-align: center"><span id="fig:hello-world"></span>
-<img src="img/hello-world.png" alt="Hello World!" width="50%" />
+<div id="the-l-vad-heart-pump." class="section level2">
+<h2>The L-VAD Heart Pump.</h2>
+<p>Individuals with serious heart failure are now being treated with an advanced medical technology known as a L-VAD, left-ventricle assist device. The L-VAD is essentially an implanted heart pump, designed to assist with the flow of blood through the body to compensate for a weak heart. Though the health and function of patients greatly improves after implanting the L-VAD, their health care providers are highly concerned about the formation of blood clots, which are a big risk for those with these pumps installed.</p>
+<div class="figure" style="text-align: center"><span id="fig:LVAD"></span>
+<img src="img/LVAD.jpg" alt="L-VAD device" width="50%" />
 <p class="caption">
-Figure 1: Hello World!
+Figure 4: L-VAD device
 </p>
 </div>
-<p>Intro…</p>
-<!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
-<p>
-<div class="figure" style="text-align: center"><span id="fig:hello-benji"></span>
-<iframe src="https://drive.google.com/file/d/0B_KuRL21Jtlebjd2Z2FVUWZDM2s/preview" width="672" height="400px">
-</iframe>
+<p>To help control the risk of blood clots, patients are prescribed blood thinning drugs, such as Coumadin. However, the specific dosage of Coumadin needs to be monitored and regulated very closely, as there are risks at both ends: blood that is too ‘thin’ will not clot effectively and can cause excessive bleeding; and blood that is too thick clots too easily and can impair the function of the L-VAD pump. To determine the appropriate level, patients regularly receive a lab test known as the INR - International Normalized Ratio - which is a measure of the blood’s ability to clot.</p>
+<p>Doctors and nurses monitor their patient’s INR scores several times per week and will recommend dosage adjustments of the anticoagulant drugs if their patient’s INR score is out of the desired range. And this is where the data science problem lies - the dosage adjustment and corresponding change of INR value can be difficult to predict. Each patient is unique and responds differently to dosage changes. A standardized and conservative protocol is consistent, but not tailored for each patient specifically. Alternatively, trial-and-error experience can teach nurses how a particular patient will react, so that customized recommendations can be made in the future; but this kind of learning is not systematic and is dependent on that nurse’s “tribal knowledge”. With many patients for a single clinic to manage, making the best dosage recommendation is difficult to achieve.</p>
+</div>
+<div id="inr-management-system." class="section level2">
+<h2>INR Management System.</h2>
+<div class="figure" style="text-align: center"><span id="fig:INR"></span>
+<img src="img/INR.jpg" alt="INR blood test" width="50%" />
 <p class="caption">
-Figure 2: Tim Witthoefft Intro Video
+Figure 5: INR blood test
 </p>
 </div>
-<div id="abstract-of-my-first-cool-idea" class="section level3">
-<h3>Abstract of my first cool idea</h3>
-<p>Heart failure patients and their healthcare providers closely monitor a critical blood-clotting lab test called INR - International Normalized Ratio. With this test result, Doctors presribe dosage changes to critical blood thinning drugs, such as Coumadin, that help to regulage the patients’ blood coagulation. Current methods for INR management either involve static protocols applied to all patients, or personally-learned yet undocumented tendencies gained by practitioners from the historical management of a patient over time. To help guide these critical decisions, the proposed data tool will visually plot INR scores over time, assess the statistical variation to detect outliers and abnormal signals, and offer predictive dossage recommendations that are tailored for the individual patient. With a systematic approach to monitoring patient’s INR scores, health care providers can better identify situations that require intervention and those that do not.</p>
+<p>This problem will be approached in three primary ways: visualizing the INR trend, applying statistical process control to historical data, and creating a prediction algorithm to recommend dosage changes to bring the INR metric back to the target value. The current method of reviewing INR history is through digital medical records. These records contain tabulated values - none of the data is visualized. Trends could be missed or misdiagnosed due to the absence of a visual representation of the patient’s INR history.</p>
+<p>Secondly, it’s important to consider the statistical variation of the INR score when determining whether to intervene and take action. Over-compensating with a dosage change, when the fluctuation is actually caused by random variation, can cause further harm and risk worsening the patient’s status. Time-series data analysis techniques such as statistical process control could be used to determine whether the INR reading is outside of normal variation and requires response.</p>
+<p>Finally, a prediction algorithm will be created to make recommended dosage changes when the INR value falls outside of norms. The goal is to bring the patient back to baseline with the fewest amount of adjustments and in the shortest period of time. Because the INR value can lag several days after a Coumadin dose change, its important to bring the patient back to baseline quickly, to minimize the amount of time the INR is in a dangerous regime. With a systematic methodology in place, it may be possible to add additional variables to the algorithm, such as the patient’s current weight, diet choices, or other blood tests, further enhancing the accuracy and personalization of the algorithm.</p>
 </div>
-<div id="abstract-of-my-second-cool-idea" class="section level3">
-<h3>Abstract of my second cool idea</h3>
-<p>The manufacturing of semiconductor devices involves hundreds of individual chemical processes. With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work. When defects are found, the current methodology for all semiconductor companies is to classify defect images manually by trained technicians. This proposal suggests that recent advances in convolutional neural networks may provide an alternative solution to human classifiers that would speed up manufacturing, improve classification accuracy, and more quickly detect new defects.</p>
-</div>
-<div id="about-the-author" class="section level2">
-<h2>About the author</h2>
-<p>Tim Witthoefft is a Senior Engineer at Samsung Austin Semiconductor and an 11 year veteran in the semiconductor industry. The deep learning defect image classification idea comes from his own work at Samsung and is a real, unsolved problem in the field. Tim’s wife, Sarah, is a Registered Nurse and specializes in heart failure and L-VAD heart pumps. The INR project idea comes from her work and the challenges seen by the Seton heart failure clinic in Austin.</p>
-<p><em>Updated: 2017-11-26</em></p>
+<div id="better-outcomes." class="section level2">
+<h2>Better Outcomes.</h2>
+<p>With a systematic approach to monitoring patient’s INR scores, health care providers can better identify situations that require intervention and those that do not. Furthermore, the prediction algorithm brings patient’s INR scores back into range much faster than before - thereby reducing the amount of time the patient is exposed to blood clot risk.</p>
 
 </div>
 </div>
@@ -144,8 +141,8 @@ Figure 2: Tim Witthoefft Intro Video
           </div>
         </div>
       </div>
+<a href="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="deep-learning-for-improved-defect-classification-in-chip-manufacturing-manufacturing-with-ai.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -174,7 +171,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/index.Rmd",
+"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/01.Rmd",
 "text": "Edit"
 },
 "download": null,
