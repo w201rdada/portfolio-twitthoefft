@@ -1,4 +1,4 @@
-# Deep learning for improved defect classification in chip manufacturing {#Manufacturing with AI}
+# Deep learning for improved defect classification in chip manufacturing {#ManufacturingWithAI}
 
 #### Keywords
 
