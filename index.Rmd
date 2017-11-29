@@ -12,7 +12,7 @@ library(magrittr)
 ```
 
 
-# Welcome!
+# Welcome! {-}
 
 <!-- You can include images saved within your repo... -->
 ```{r hello-world,echo=FALSE,fig.cap='Hello World!',fig.align='center',out.width='50%'}
@@ -24,19 +24,19 @@ Intro...
 <!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
 <p>
 ```{r hello-benji,echo=FALSE,fig.cap='Tim Witthoefft Intro Video',fig.align='center'}
-knitr::include_url('https://drive.google.com/file/d/0B_KuRL21Jtlebjd2Z2FVUWZDM2s/preview')
+knitr::include_url('https://drive.google.com/file/d/1krHQdJ3SZeeg5Jewq9NIiPHkGkHIgzDr/preview')
 ```
 
-### Abstract of my first cool idea
+### Abstract of my first cool idea {-}
 
 Heart failure patients and their healthcare providers closely monitor a critical blood-clotting lab test called INR - International Normalized Ratio.  With this test result, Doctors presribe dosage changes to critical blood thinning drugs, such as Coumadin, that help to regulage the patients' blood coagulation.  Current methods for INR management either involve static protocols applied to all patients, or personally-learned yet undocumented tendencies gained by practitioners from the historical management of a patient over time.  To help guide these critical decisions, the proposed data tool will visually plot INR scores over time, assess the statistical variation to detect outliers and abnormal signals, and offer predictive dossage recommendations that are tailored for the individual patient.  With a systematic approach to monitoring patient’s INR scores, health care providers can better identify situations that require intervention and those that do not. 
 
-### Abstract of my second cool idea
+### Abstract of my second cool idea {-}
 
 The manufacturing of semiconductor devices involves hundreds of individual chemical processes. With billions of transistors per chip and hundreds of chips per silicon wafer, there are many potential points of failure that can cause a chip to not work.  When defects are found, the current methodology for all semiconductor companies is to classify defect images manually by trained technicians.  This proposal suggests that recent advances in convolutional neural networks may provide an alternative solution to human classifiers that would speed up manufacturing, improve classification accuracy, and more quickly detect new defects.  
   
 
-## About the author
+## About the author {-}
 
 Tim Witthoefft is a Senior Engineer at Samsung Austin Semiconductor and an 11 year veteran in the semiconductor industry.  The deep learning defect image classification idea comes from his own work at Samsung and is a real, unsolved problem in the field.  Tim's wife, Sarah, is a Registered Nurse and specializes in heart failure and L-VAD heart pumps.  The INR project idea comes from her work and the challenges seen by the Seton heart failure clinic in Austin.  
 
